@@ -33,7 +33,7 @@ class AuthenticatedSessionController extends Controller
         $user = Auth::user();
 
         // Allowed roles
-        $allowedRoles = ['staff', 'admin', 'personal', 'super_admin'];
+        $allowedRoles = ['staff', 'admin', 'super_admin'];
 
         // Check if user's role is not allowed
         if (!in_array($user->role, $allowedRoles)) {
